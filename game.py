@@ -13,6 +13,7 @@ computer = choices [randint(0, 2)]
 player = False 
 
 while player is False:
+<<<<<<< HEAD
     # set player to True
     print("***************************\n\n")
     print("computer lives: ", computer_lives, "/5\n")
@@ -21,10 +22,16 @@ while player is False:
     print("***************************\n\n")
 
     player = input("choose rock, paper, paper or scissors\n")
+=======
+	# set player to True
+	print("************************\n\n")
+	print("choose your weapon!\n\n")
+	print("************************\n\n")
+>>>>>>> 8b855e33f38f421b2c90ee2157967b235b6ae561
 
-    print("computer chose", computer, "\n")
-    print("player chose", player, "\n")
+	player = input("choose rock, paper, paper or scissors\n")
 
+<<<<<<< HEAD
     if player.lower() == "quit":
         exit()
     elif computer == player:
@@ -93,3 +100,42 @@ while player is False:
         player = False
         computer = choices[randint(0, 2)]
 
+=======
+	print("computer chose", computer, "\n")
+	print("player chose", player, "\n")
+
+	if player.lower()== "quit":
+		 exit()
+
+	elif computer == player:
+		print("tie! no one wins, play again")
+	elif player == "rock":
+		if computer == "paper":
+			print("you lose!", computer, "covers" , player, "\n")
+		else:
+			print("you win!", player, "smashes through", computer, "\n")
+
+
+	elif player.lower() == "paper":
+		if computer == "scissors":
+			print("you lose!", computer, "cuts" , player, "\n")
+		else:
+			print("you win!", player, "covers", computer, "\n")
+
+
+	elif player.lower() == "scissors":
+		if computer == "rock":
+			print("you lose!", computer, "smashes" , player, "\n")
+		else:
+			print("you win!", player, "cuts", computer, "\n")
+
+
+	else:
+		print("That's not a valid choice, try again")
+
+
+
+	#need to check all of our conditions after checking for a tie
+	player = False
+	computer = choices[randint(0, 2)]
+>>>>>>> 8b855e33f38f421b2c90ee2157967b235b6ae561
